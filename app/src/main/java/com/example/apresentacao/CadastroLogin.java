@@ -112,7 +112,7 @@ public class CadastroLogin extends AppCompatActivity {
     }
 
    public void cadastro(View view){
-       Intent proximaTela = new Intent(this, Cont_Cadastro.class);
+       Intent proximaTela = new Intent(this, Cadastre_se.class);
        startActivity(proximaTela);
    }
 

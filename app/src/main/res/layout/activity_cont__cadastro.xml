@@ -7,67 +7,24 @@
     android:background="@color/corFundo"
     tools:context=".Cont_Cadastro">
 
-    <EditText
-        android:id="@+id/CampoEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="44dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="379dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:text="Escolha Do Usuario"
-        android:textColor="@color/corFundo"
-        android:textIsSelectable="false"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CampoBairro" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="379dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:text="Dados de acesso"
-        android:textColor="@color/corFundo"
-        android:textIsSelectable="false"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
         android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
         android:id="@+id/CampoCelular"
-        android:layout_width="379dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="Celular"
         android:inputType="phone"
@@ -79,99 +36,67 @@
         android:id="@+id/BotaoEntrarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp"
         android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RadioCampoEscolha" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="379dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
-        android:text="Dados pessoais"
+        android:text="Dados pessoais cliente"
         android:textColor="@color/corFundo"
         android:textIsSelectable="false"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CampoSenha" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/CampoBairro"
-        android:layout_width="379dp"
+        android:id="@+id/CampoEndereco"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="Bairro"
+        android:hint="Endereço"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CampoCelular" />
 
     <EditText
-        android:id="@+id/CampoSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="Senha"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.629"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/CampoEmail" />
-
-    <EditText
         android:id="@+id/CampoNome"
-        android:layout_width="379dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="Nome"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/CampoBairro"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Deseja Finalizar o Cadastro como?"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <RadioGroup
-        android:id="@+id/RadioCampoEscolha"
-        android:orientation="vertical"
-        android:layout_width="300dp"
-        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Bairro"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9">
-
-        <RadioButton
-            android:id="@+id/radioClienteCadastro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cliente" />
-
-        <RadioButton
-            android:id="@+id/radioProfCadastro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Profissional" />
-
-    </RadioGroup>
+        app:layout_constraintTop_toBottomOf="@+id/CampoEndereco" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

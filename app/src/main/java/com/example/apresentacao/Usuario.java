@@ -11,8 +11,10 @@ public class Usuario {
     private String nome;
     private String celular;
     private String bairro;
+    private String endereco;
 
     public void salvarComoCliente(){
+                
         DatabaseReference firebase = ConfiguracaoFirebase.getFirebase();
         firebase.child("Cliente")
                 .child(this.IdUsuario)
@@ -76,5 +78,13 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 }
